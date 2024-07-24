@@ -14,7 +14,7 @@ const MBA = () => {
 
   const fetchData = () => {
     axios
-      .get("http://ngoctoan90.pythonanywhere.com/api/may-bien-ap/")
+      .get("https://ngoctoan90.pythonanywhere.com/api/may-bien-ap/")
       .then((response) => {
         setData(response.data);
       })
@@ -33,7 +33,7 @@ const MBA = () => {
 
   const handleDelete = (id) => {
     axios
-      .delete(`http://ngoctoan90.pythonanywhere.com/api/may-bien-ap/${id}/`)
+      .delete(`https://ngoctoan90.pythonanywhere.com/api/may-bien-ap/${id}/`)
       .then((response) => {
         fetchData();
       })
@@ -56,7 +56,7 @@ const MBA = () => {
 
     if (isCopying || !formData.id) {
       axios
-        .post("http://ngoctoan90.pythonanywhere.com/api/may-bien-ap/", data, {
+        .post("https://ngoctoan90.pythonanywhere.com/api/may-bien-ap/", data, {
           headers: {
             "Content-Type": "multipart/form-data",
           },
@@ -72,7 +72,7 @@ const MBA = () => {
     } else {
       axios
         .put(
-          `http://ngoctoan90.pythonanywhere.com/api/may-bien-ap/${formData.id}/`,
+          `https://ngoctoan90.pythonanywhere.com/api/may-bien-ap/${formData.id}/`,
           data,
           {
             headers: {

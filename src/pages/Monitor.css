@@ -1,0 +1,43 @@
+.expanded-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.latest-data-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  background-color: #001f3f;
+  color: #ff851b;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.charts-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.chart-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px; /* Giảm khoảng cách giữa các hàng đồ thị */
+}
+
+.chart-container {
+  width: 32%;
+  height: 250px; /* Giảm chiều cao của đồ thị */
+  margin-bottom: 10px; /* Giảm khoảng cách dưới đồ thị */
+}

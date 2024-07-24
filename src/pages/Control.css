@@ -1,0 +1,65 @@
+.tab-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab-bar button {
+  padding: 10px 20px;
+  background-color: lightgray;
+  border: none;
+  cursor: pointer;
+}
+
+.tab-bar button.active {
+  background-color: green;
+  color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: lightgray;
+}
+
+button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+input {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+.form-container input {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.form-container button {
+  margin-right: 5px;
+  padding: 5px 10px;
+}

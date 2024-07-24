@@ -1,0 +1,60 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px; /* Tăng kích thước chữ */
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center; /* Căn giữa chữ */
+  vertical-align: middle; /* Căn giữa theo chiều dọc */
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px; /* Giảm kích thước nút */
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button:active {
+  background-color: #1e7e34;
+}
+
+button:nth-child(2) {
+  background-color: #dc3545; /* Màu cho nút Xóa */
+}
+
+button:nth-child(2):hover {
+  background-color: #c82333;
+}
+
+button:nth-child(2):active {
+  background-color: #bd2130;
+}
+
+button:nth-child(3) {
+  background-color: #ffc107; /* Màu cho nút Copy */
+}
+
+button:nth-child(3):hover {
+  background-color: #e0a800;
+}
+
+button:nth-child(3):active {
+  background-color: #d39e00;
+}

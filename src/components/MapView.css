@@ -1,0 +1,14 @@
+/* Đảm bảo rằng map-container chiếm hết không gian trống */
+.map-container {
+  height: calc(
+    100vh - 100px
+  ); /* Chiều cao trừ đi chiều cao của Header và Footer */
+  width: 100%;
+  position: relative;
+}
+
+/* Đảm bảo rằng bản đồ chiếm hết không gian của map-container */
+.leaflet-container {
+  height: 150%;
+  width: 100%;
+}

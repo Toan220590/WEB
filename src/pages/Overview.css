@@ -1,0 +1,7 @@
+.map-container {
+  height: calc(
+    100vh - 100px
+  ); /* Chiều cao trừ đi chiều cao của Header và Footer */
+  width: 100%;
+  position: relative;
+}

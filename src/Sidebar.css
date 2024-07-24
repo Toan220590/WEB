@@ -1,0 +1,29 @@
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #007bff;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.sidebar h3 {
+  color: white;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar ul ul {
+  margin-left: 20px;
+}

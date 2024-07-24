@@ -1,0 +1,80 @@
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00bfff;
+  padding: 10px;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.project-name {
+  font-size: 1.2rem;
+}
+
+.login-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #007bff;
+  color: white;
+  width: 200px;
+  padding: 20px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #00bfff;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.overview,
+.transformer-table,
+.monitoring,
+.settings,
+.warnings {
+  height: 100%;
+}

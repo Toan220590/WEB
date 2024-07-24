@@ -1,0 +1,47 @@
+/* Settings.css */
+
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.settings-form label {
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.settings-form input {
+  width: 60%;
+  padding: 5px;
+}
+
+.settings-form select {
+  width: 100%;
+  padding: 5px;
+}
+
+.settings-form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.settings-form button:hover {
+  background-color: darkgreen;
+}

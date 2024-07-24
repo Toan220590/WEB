@@ -10,7 +10,7 @@ const Alert = () => {
 
   useEffect(() => {
     axios
-      .get("http://ngoctoan90.pythonanywhere.com/api/may-bien-ap/")
+      .get("https://ngoctoan90.pythonanywhere.com/api/may-bien-ap/")
       .then((response) => {
         setMbaList(response.data);
         if (response.data.length > 0) {
@@ -25,14 +25,14 @@ const Alert = () => {
   useEffect(() => {
     if (selectedMbaId !== null) {
       axios
-        .get("http://ngoctoan90.pythonanywhere.com/api/canh-bao/")
+        .get("https://ngoctoan90.pythonanywhere.com/api/canh-bao/")
         .then((response) => {
           const alertsData = response.data;
           const duLieuIds = [
             ...new Set(alertsData.map((alert) => alert.du_lieu)),
           ];
           axios
-            .get("http://ngoctoan90.pythonanywhere.com/api/du-lieu/")
+            .get("https://ngoctoan90.pythonanywhere.com/api/du-lieu/")
             .then((response) => {
               const duLieuData = response.data.reduce((map, duLieu) => {
                 map[duLieu.id] = duLieu.may_bien_ap;

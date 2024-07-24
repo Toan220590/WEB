@@ -11,7 +11,7 @@ const GiamSat = () => {
 
   useEffect(() => {
     axios
-      .get("http://ngoctoan90.pythonanywhere.com/api/may-bien-ap/")
+      .get("https://ngoctoan90.pythonanywhere.com/api/may-bien-ap/")
       .then((response) => {
         setMbaList(response.data);
       });
@@ -20,7 +20,7 @@ const GiamSat = () => {
   useEffect(() => {
     if (selectedTab) {
       axios
-        .get("http://ngoctoan90.pythonanywhere.com/api/du-lieu/")
+        .get("https://ngoctoan90.pythonanywhere.com/api/du-lieu/")
         .then((response) => {
           const filteredData =
             selectedTab === "summary"

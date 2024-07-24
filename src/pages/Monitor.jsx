@@ -33,7 +33,7 @@ const Monitor = () => {
 
   useEffect(() => {
     axios
-      .get("http://ngoctoan90.pythonanywhere.com/api/may-bien-ap/")
+      .get("https://ngoctoan90.pythonanywhere.com/api/may-bien-ap/")
       .then((response) => {
         setMbaList(response.data);
         console.log("MBA List:", response.data);
@@ -56,7 +56,7 @@ const Monitor = () => {
   const fetchMonitoringData = (mbaId) => {
     axios
       .get(
-        `http://ngoctoan90.pythonanywhere.com/api/du-lieu/may-bien-ap/${mbaId}/`
+        `https://ngoctoan90.pythonanywhere.com/api/du-lieu/may-bien-ap/${mbaId}/`
       )
       .then((response) => {
         const data = response.data;

@@ -12,7 +12,7 @@ const Control = () => {
 
   useEffect(() => {
     axios
-      .get("http://ngoctoan90.pythonanywhere.com/api/may-bien-ap/")
+      .get("https://ngoctoan90.pythonanywhere.com/api/may-bien-ap/")
       .then((response) => {
         setMbaList(response.data);
         if (response.data.length > 0) {
@@ -30,7 +30,7 @@ const Control = () => {
   const fetchDevices = () => {
     axios
       .get(
-        `http://ngoctoan90.pythonanywhere.com/api/thiet-bi/?may_bien_ap=${selectedMba}`
+        `https://ngoctoan90.pythonanywhere.com/api/thiet-bi/?may_bien_ap=${selectedMba}`
       )
       .then((response) => {
         setDevices(response.data);
@@ -40,7 +40,7 @@ const Control = () => {
   const toggleDeviceStatus = (id) => {
     const device = devices.find((d) => d.id === id);
     axios
-      .patch(`http://ngoctoan90.pythonanywhere.com/api/thiet-bi/${id}/`, {
+      .patch(`https://ngoctoan90.pythonanywhere.com/api/thiet-bi/${id}/`, {
         trang_thai: !device.trang_thai,
       })
       .then((response) => {
@@ -51,7 +51,7 @@ const Control = () => {
   const handleCreateDevice = () => {
     if (newDeviceName) {
       axios
-        .post("http://ngoctoan90.pythonanywhere.com/api/thiet-bi/", {
+        .post("https://ngoctoan90.pythonanywhere.com/api/thiet-bi/", {
           ten: newDeviceName,
           trang_thai: false,
           may_bien_ap: selectedMba,
@@ -74,7 +74,7 @@ const Control = () => {
     if (editDevice && newDeviceName) {
       axios
         .put(
-          `http://ngoctoan90.pythonanywhere.com/api/thiet-bi/${editDevice.id}/`,
+          `https://ngoctoan90.pythonanywhere.com/api/thiet-bi/${editDevice.id}/`,
           {
             ten: newDeviceName,
             trang_thai: editDevice.trang_thai,
@@ -94,7 +94,7 @@ const Control = () => {
 
   const handleDeleteDevice = (id) => {
     axios
-      .delete(`http://ngoctoan90.pythonanywhere.com/api/thiet-bi/${id}/`)
+      .delete(`https://ngoctoan90.pythonanywhere.com/api/thiet-bi/${id}/`)
       .then(() => {
         setDevices(devices.filter((d) => d.id !== id));
       });

@@ -26,7 +26,7 @@ const Report = () => {
 
   useEffect(() => {
     axios
-      .get("http://ngoctoan90.pythonanywhere.com/api/may-bien-ap/")
+      .get("https://ngoctoan90.pythonanywhere.com/api/may-bien-ap/")
       .then((response) => {
         if (Array.isArray(response.data)) {
           setMbaList(response.data);
@@ -49,7 +49,7 @@ const Report = () => {
 
     axios
       .post(
-        "http://ngoctoan90.pythonanywhere.com/api/export-data/",
+        "https://ngoctoan90.pythonanywhere.com/api/export-data/",
         {
           mode,
           startDate,

@@ -9,7 +9,7 @@ const Settings = () => {
 
   useEffect(() => {
     axios
-      .get("http://ngoctoan90.pythonanywhere.com/api/may-bien-ap/")
+      .get("https://ngoctoan90.pythonanywhere.com/api/may-bien-ap/")
       .then((response) => {
         setMbaList(response.data);
       })
@@ -22,7 +22,7 @@ const Settings = () => {
     if (selectedMba) {
       axios
         .get(
-          `http://ngoctoan90.pythonanywhere.com/api/thiet-lap-canh-bao/${selectedMba}/`
+          `https://ngoctoan90.pythonanywhere.com/api/thiet-lap-canh-bao/${selectedMba}/`
         )
         .then((response) => {
           setCanhBaoSettings(response.data);
@@ -44,7 +44,7 @@ const Settings = () => {
   const handleSave = () => {
     axios
       .put(
-        `http://ngoctoan90.pythonanywhere.com/api/thiet-lap-canh-bao/${selectedMba}/`,
+        `https://ngoctoan90.pythonanywhere.com/api/thiet-lap-canh-bao/${selectedMba}/`,
         canhBaoSettings
       )
       .then((response) => {

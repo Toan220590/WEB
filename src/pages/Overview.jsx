@@ -39,7 +39,7 @@ const Overview = () => {
 
   const fetchMarkers = () => {
     axios
-      .get("http://ngoctoan90.pythonanywhere.com/api/may-bien-ap/")
+      .get("https://ngoctoan90.pythonanywhere.com/api/may-bien-ap/")
       .then((response) => {
         setMarkers(response.data);
       })

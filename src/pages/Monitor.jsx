@@ -196,15 +196,15 @@ const Monitor = () => {
                     </div>
                     <div className="grid-item">
                       <h3>Công suất tác dụng pha A</h3>
-                      <p>{latestData[mba.id].cong_suat_tac_dung_a} kW</p>
+                      <p>{latestData[mba.id].cong_suat_tac_dung_a} W</p>
                     </div>
                     <div className="grid-item">
                       <h3>Công suất tác dụng pha B</h3>
-                      <p>{latestData[mba.id].cong_suat_tac_dung_b} kW</p>
+                      <p>{latestData[mba.id].cong_suat_tac_dung_b} W</p>
                     </div>
                     <div className="grid-item">
                       <h3>Công suất tác dụng pha C</h3>
-                      <p>{latestData[mba.id].cong_suat_tac_dung_c} kW</p>
+                      <p>{latestData[mba.id].cong_suat_tac_dung_c} W</p>
                     </div>
                   </div>
                 </div>
